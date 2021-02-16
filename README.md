@@ -1,4 +1,4 @@
-# vue_ejercicio6
+# ejercicios con VUEjs
 
 ## Project setup
 ```
