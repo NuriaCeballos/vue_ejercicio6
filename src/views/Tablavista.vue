@@ -10,7 +10,6 @@
 
 <script>
 import Tabla from "@/components/Tabla.vue";
-
 export default {
   name: "Tablavista",
   components: {

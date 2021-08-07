@@ -1,25 +1,22 @@
 <template>
   <div class="container">
-    <div class="row">
+    <div class="row formulario">
       <div class="col-6">
-        <input v-model="concepto" placeholder="concepto" />
+        <input v-model="concepto" placeholder="concepto"/>
       </div>
-      <div class="col-2">
-        <input
-          type="number"
-          size="3"
-          v-model="cantidad"
-          placeholder="cantidad"
+      <div class="col-6">
+        <input type="number" size="3" v-model="cantidad" placeholder="cantidad"
         />
       </div>
-      <div class="col-2">
-        <input type="number" size="3" v-model="precio" placeholder="precio" />
+      <div class="col-6">
+        <input type="number" size="2" v-model="precio" placeholder="precio" />
       </div>
-      <div class="col-2">
+      <div class="col-6">
         <button @click="agregar" class="btn btn-warning">Agregar</button>
       </div>
-    </div>
+    
 
+  <div class="row tabla">
     <table class="table table-striped">
       <thead>
         <tr>
@@ -28,14 +25,13 @@
           <th>Cantidad</th>
           <th>Subtotal</th>
          
-
         </tr>
       </thead>
       <tbody>
         <tr v-for="(dato, i) in datos" :key="i">
-          <td><input type="number" size="3" v-model={{ dato.concepto }} placeholder="precio" /></td>
-          <td>{{ dato.cantidad }}</td>
-          <td>{{ dato.precio }}</td>
+          <td><input v-model="dato.concepto"/></td>
+          <td><input v-model="dato.cantidad"/></td>
+          <td><input v-model="dato.precio"/></td>
           <td>{{ dato.precio * dato.cantidad }}</td>
           <td><button @click="eliminar(i)" class="btn btn-warning">Eliminar</button></td>
 
@@ -46,6 +42,8 @@
       </div>
     </table>
   </div>
+   </div>
+   </div>
 </template>
 
 <script>
@@ -96,5 +94,15 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style >
+.formulario{
+  background-color: blue;
+}
+.tabla{
+  background-color: rgb(129, 129, 233);
+}
+
+
+
+</style> 
+

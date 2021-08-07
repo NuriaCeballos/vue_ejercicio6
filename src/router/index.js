@@ -3,6 +3,10 @@ import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Ejercicio6 from '../views/Ejercicio6.vue'
 import Tablavista from '../views/Tablavista.vue'
+import Provinciasvista from '../views/Provinciasvista.vue'
+import Imagenvista from '../views/Imagenvista.vue'
+import Vistacarrito from '../views/Vistacarrito.vue'
+
 
 const routes = [
   {
@@ -28,7 +32,28 @@ const routes = [
     name: 'Tablavista',
     component: Tablavista
     
+  },
+  {
+    path: '/provinciasvista',
+    name: 'Provinciasvista',
+    component: Provinciasvista
+    
+  },
+  {
+    path: '/imagenvista',
+    name: 'Imagenvista',
+    component: Imagenvista
+    
+  },
+  {
+    path: '/vistacarrito',
+    name: 'Vistacarrito',
+    component: Vistacarrito
+    
   }
+ 
+  
+
 ]
 
 const router = createRouter({

@@ -2,10 +2,16 @@
   <div id="nav">
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/ejercicio6">Ejercicio6</router-link>|
-    <router-link to="/tablavista">Tabla de datos</router-link>
-    <router-view/>
+    <router-link to="/ejercicio6">Ejercicio6</router-link> |
+    <router-link to="/tablavista">Tabla de datos</router-link> |
+    <router-link to="/provinciasvista">Tiempo por provincias</router-link>|
+    <router-link to="/imagenvista">Cambio de imagen</router-link>|
+    <router-link to="/vistacarrito">Carrito</router-link>
+    
+    <router-view/> 
   </div>
+  
+  
  
   
 </template>
@@ -27,7 +33,7 @@
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #42b983;
+      color: #0d1310;
     }
   }
 }
